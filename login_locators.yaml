@@ -1,0 +1,15 @@
+# modules/ui/locators/login_locators.yaml
+
+login_page:
+  username_input:
+    type: xpath
+    value: "//input[@name='{username_field}']"
+
+  password_input:
+    type: css
+    value: "input[type='password']"
+
+  login_button:
+    type: xpath
+    value: "//button[contains(text(), '{login_text}')]"
+
