@@ -1,0 +1,7 @@
+# framework_config.yaml
+base_url: "https://example.com"
+browser: "chrome"
+env: "staging"
+username: "test_user"
+password: "test_pass"
+
