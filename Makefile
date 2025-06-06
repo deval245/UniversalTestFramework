@@ -29,7 +29,8 @@ freeze:
 pr:
 	@read -p "🔤 Enter PR Title: " title; \
 	read -p "📝 Enter PR Description: " body; \
-	gh pr create --base dev --head $(CURRENT_BRANCH) --title "$$title" --body "$$body"
+	gh pr create --base dev --head $(CURRENT_BRANCH) --title "$$title" --body "$$body" && \
+	gh pr view --web
 
 # 🔍 Live tail logs from report directory
 logs:
